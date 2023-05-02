@@ -1,7 +1,10 @@
 var inter = 0;
-async onload = () => {
+async function start() {
   alert('a');
   setInterval(() => {
     document.querySelector('div').innerHTML = inter += 1;
   },1);
+}
+onload = () => {
+  start();
 }
