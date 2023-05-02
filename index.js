@@ -5,6 +5,7 @@ onload = () => {
     of = true;
   }, 0.1);
   safari.alarms.onAlarm.addListener(function (alarm) {
-   if(of == true) of = false
+    document.body.innerHTML = '<div>' + of + '</div>';
+    if(of == true) of = false
   });
 }
