@@ -1,5 +1,5 @@
 var of = true;
-onload = () => {
+async onload = () => {
   alert('a');
   safari.alarms.create("onof", { "periodInMinutes": 0.0017 });
   setInterval(() => {
